@@ -25,9 +25,9 @@ import com.Technosignia.Autocare.entity.JobCard;
 		JobCardService jobcardservice;
 		
 		@PostMapping("/JobCard")
-		public JobCard createJobCard(@RequestBody JobCard customer) {
+		public JobCard createJobCard(@RequestBody JobCard jobcard) {
 			System.out.println("Inside Controller"); 
-			return jobcardservice.createJobCard(customer);
+			return jobcardservice.createJobCard(jobcard);
 		}
 		
 		@GetMapping("/JobCard/{Id}")
@@ -37,10 +37,13 @@ import com.Technosignia.Autocare.entity.JobCard;
 		}
 		@PutMapping("/JobCard")
 		public JobCard updateCustomer(@RequestBody JobCard customer,@RequestParam Long id) {
-			return JobCardservice.updateJobCard(JobCardservice,id);
+			return jobcardservice.updateJobCard(jobcardservice,id);
 		}
-	
+		@DeleteMapping("/customer")
+		public void deleteCustomer(Long id) {
+			
 		
 		
+	}
 	}
 
