@@ -29,7 +29,7 @@ public class JobCardService {
 		Optional<JobCard>opjobcard=jobcardRepository.findById(id);
 		JobCard jobcard1=opjobcard.get();
 		
-		jobcard1.setAddress(jobcard.getAddress());
+		
 		jobcard1.setContact(jobcard.getContact());
 		
 		return jobcardRepository.save(jobcard1);
