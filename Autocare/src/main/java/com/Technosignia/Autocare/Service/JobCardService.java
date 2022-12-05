@@ -31,7 +31,7 @@ public class JobCardService {
 		
 		
 		jobcard1.setContact(jobcard.getContact());
-		
+		jobcard1.setContact(jobcard.getContact());
 		return jobcardRepository.save(jobcard1);
 
 
